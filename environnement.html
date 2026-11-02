@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Environnement d'apprentissage de Ezequiel Domingos Pedro, BTS SIO option SISR : formation, matériels, logiciels et organisation.">
+<title>Environnement d'apprentissage – Portfolio BTS SIO – Ezequiel Domingos Pedro</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27%3E%3Ctext y=%27.9em%27 font-size=%2790%27%3E💻%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#contenu">Aller au contenu</a>
+<div class="wrap">
+<aside>
+  <div class="mono" aria-hidden="true">EDP</div>
+  <h1>Ezequiel Domingos Pedro</h1>
+  <p>BTS SIO, option SISR</p>
+  <nav>
+    <a href="index.html">Accueil</a>
+    <a href="environnement.html" class="current" aria-current="page">Environnement d'apprentissage</a>
+    <button type="button" id="projets-btn" aria-expanded="false" aria-controls="sub">Projets <span class="chev">▾</span></button>
+    <div id="sub" hidden>
+      <a href="projets.html">Tous les projets</a>
+      <a href="activite1.html">Activité 1</a>
+      <a href="activite2.html">Activité 2</a>
+    </div>
+    <a href="stage.html">Stage</a>
+    <a href="veille.html">Veille informatique</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</aside>
+<main id="contenu">
+<section>
+<h2>Mon environnement d'apprentissage</h2>
+  <p class="lead">Là où je me forme, avec quels outils et comment je m'organise.</p>
+
+  <div class="card">
+    <dl>
+      <dt>Formation</dt><dd>BTS Services informatiques aux organisations (SIO), option SISR</dd>
+      <dt>Établissement</dt><dd>Lycée Lamartine</dd>
+      <dt>Promotion</dt><dd>2025 – 2027</dd>
+      <dt>Option</dt><dd>SISR : Solutions d'infrastructure, systèmes et réseaux</dd>
+    </dl>
+  </div>
+
+  <h3>Mes outils de travail</h3>
+  <div class="grid">
+    <div class="proj"><strong>Virtualisation</strong><span>VirtualBox et VMware pour créer des machines virtuelles : serveurs, postes et routeurs.</span></div>
+    <div class="proj"><strong>Systèmes</strong><span>Debian (Linux) pour les serveurs et les routeurs, Windows pour les postes clients.</span></div>
+    <div class="proj"><strong>Réseau</strong><span>Adressage IP, routage, DHCP, DNS et tests avec la commande ping. Matériel Cisco en cours d'apprentissage.</span></div>
+    <div class="proj"><strong>Documentation</strong><span>Captures d'écran et comptes rendus pour garder la trace de chaque configuration.</span></div>
+  </div>
+
+  <h3>Ce que j'y ai réalisé</h3>
+  <ul>
+    <li><a href="activite1.html">Activité 1</a> : une plateforme de TP virtualisée en 5 phases (LAN, passerelle, routage, services, DMZ).</li>
+    <li><a href="activite2.html">Activité 2</a> : la configuration IP de quatre machines et les tests de ping entre les postes.</li>
+    <li><a href="stage.html">Stage</a> : cinq semaines chez Charnay Phone, du 01/06/2026 au 03/07/2026.</li>
+  </ul>
+
+  <h3>Mon organisation</h3>
+  <p><span class="todo">[Explique comment tu travailles : horaires de cours, travaux pratiques, travail personnel, outils pour prendre des notes, entraide avec la classe…]</span></p>
+
+  <h3>Ressources que j'utilise</h3>
+  <p><span class="todo">[Cours, sites, tutoriels ou vidéos qui t'aident à apprendre, par exemple la documentation Debian ou Pix.]</span></p>
+</section>
+<footer>Portfolio BTS SIO – Ezequiel Domingos Pedro</footer>
+</main>
+</div>
+<script>
+const b=document.getElementById('projets-btn'),u=document.getElementById('sub');
+b.addEventListener('click',()=>{u.hidden=!u.hidden;b.setAttribute('aria-expanded',!u.hidden)});
+</script>
+</body>
+</html>
