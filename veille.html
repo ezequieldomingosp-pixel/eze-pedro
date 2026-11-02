@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Veille informatique de Ezequiel Domingos Pedro, BTS SIO option SISR : sujet, sources, méthode et journal de veille.">
+<title>Veille informatique – Portfolio BTS SIO – Ezequiel Domingos Pedro</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27%3E%3Ctext y=%27.9em%27 font-size=%2790%27%3E💻%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#contenu">Aller au contenu</a>
+<div class="wrap">
+<aside>
+  <div class="mono" aria-hidden="true">EDP</div>
+  <h1>Ezequiel Domingos Pedro</h1>
+  <p>BTS SIO, option SISR</p>
+  <nav>
+    <a href="index.html">Accueil</a>
+    <button type="button" id="projets-btn" aria-expanded="false" aria-controls="sub">Projets <span class="chev">▾</span></button>
+    <div id="sub" hidden>
+      <a href="projets.html">Tous les projets</a>
+      <a href="activite1.html">Activité 1</a>
+      <a href="activite2.html">Activité 2</a>
+    </div>
+    <a href="stage.html">Stage</a>
+    <a href="veille.html" class="current" aria-current="page">Veille informatique</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</aside>
+<main id="contenu">
+<section>
+<h2>Veille informatique</h2>
+  <p class="lead">Suivre l'actualité des systèmes, des réseaux et de la sécurité pour garder mes connaissances à jour.</p>
+
+  <div class="card">
+    <dl>
+      <dt>Sujet</dt><dd>Sécurité des systèmes et des réseaux : vulnérabilités, correctifs et fin de support des logiciels <span class="todo">[à confirmer ou modifier]</span></dd>
+      <dt>Pourquoi</dt><dd>Ces sujets rejoignent mon travail en SISR (configuration de serveurs et de réseaux) et mon stage, où j'ai réinstallé des systèmes Windows et macOS.</dd>
+      <dt>Fréquence</dt><dd><span class="todo">[ex. une fois par semaine]</span></dd>
+      <dt>Outils</dt><dd class="tags"><span>Flux RSS</span><span>Alertes e-mail</span><span class="todo">[ex. Feedly]</span></dd>
+    </dl>
+  </div>
+
+  <h3>Mes sources</h3>
+  <p>Des sources officielles et des sites spécialisés, pour croiser les informations.</p>
+  <div class="grid">
+    <a class="proj" href="https://cert.ssi.gouv.fr/" target="_blank" rel="noopener"><strong>CERT-FR</strong><span>Alertes et avis de sécurité de l'ANSSI : vulnérabilités, correctifs, menaces.</span></a>
+    <a class="proj" href="https://www.cybermalveillance.gouv.fr/" target="_blank" rel="noopener"><strong>Cybermalveillance.gouv.fr</strong><span>Prévention et assistance face aux attaques, pour le grand public et les entreprises.</span></a>
+    <a class="proj" href="https://www.it-connect.fr/" target="_blank" rel="noopener"><strong>IT-Connect</strong><span>Actualités et tutoriels sur les systèmes, les réseaux et la sécurité.</span></a>
+    <a class="proj" href="https://www.lemagit.fr/" target="_blank" rel="noopener"><strong>LeMagIT</strong><span>Actualité des infrastructures et de la cybersécurité en entreprise.</span></a>
+  </div>
+
+  <h3>Ma méthode</h3>
+  <ol class="steps">
+    <li><b>Collecter</b> : je lis les nouveautés de mes sources (flux RSS ou alertes).</li>
+    <li><b>Trier</b> : je garde ce qui concerne mon sujet et je vérifie l'information sur une deuxième source.</li>
+    <li><b>Noter</b> : je résume l'article en quelques lignes dans mon journal de veille, avec la date et le lien.</li>
+    <li><b>Relier</b> : je repère le lien avec mes activités ou mon stage.</li>
+  </ol>
+
+  <h3>Journal de veille</h3>
+  <div class="tablewrap"><table>
+    <thead><tr><th>Date</th><th>Titre et source</th><th>Résumé</th><th>Lien avec ma formation</th></tr></thead>
+    <tbody>
+      <tr><td><span class="todo">[date]</span></td><td><span class="todo">[titre, source, lien]</span></td><td><span class="todo">[3 à 4 lignes]</span></td><td><span class="todo">[ex. stage, activité 1]</span></td></tr>
+      <tr><td><span class="todo">[date]</span></td><td><span class="todo">[titre, source, lien]</span></td><td><span class="todo">[3 à 4 lignes]</span></td><td><span class="todo">[ex. stage, activité 2]</span></td></tr>
+      <tr><td><span class="todo">[date]</span></td><td><span class="todo">[titre, source, lien]</span></td><td><span class="todo">[3 à 4 lignes]</span></td><td><span class="todo">[à compléter]</span></td></tr>
+    </tbody>
+  </table></div>
+
+  <h3>Ce que ma veille m'apporte</h3>
+  <p><span class="todo">[Ce que tu retiens : par exemple l'importance des mises à jour, ce que tu as appris sur les vulnérabilités, comment tu l'as utilisé en stage.]</span></p>
+</section>
+<footer>Portfolio BTS SIO – Ezequiel Domingos Pedro</footer>
+</main>
+</div>
+<script>
+const b=document.getElementById('projets-btn'),u=document.getElementById('sub');
+b.addEventListener('click',()=>{u.hidden=!u.hidden;b.setAttribute('aria-expanded',!u.hidden)});
+</script>
+</body>
+</html>
