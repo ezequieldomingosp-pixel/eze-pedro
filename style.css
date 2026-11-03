@@ -155,3 +155,6 @@ figure.medium img{cursor:zoom-in}
   .mission{grid-template-columns:1fr;padding:18px}
 }
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+table.wide{max-width:none}
+table.wide td,table.wide th{vertical-align:top}
